@@ -1,5 +1,5 @@
-const sails = require('./debug/sails');
-global.gladys = require('./debug/gladys');
+const sails = require('./mock-sails');
+global.gladys = require('./mock-gladys');
 
 const index = require('./index')(sails);
 
