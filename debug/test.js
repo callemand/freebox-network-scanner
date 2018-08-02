@@ -1,7 +1,7 @@
 const sails = require('./mock-sails');
 global.gladys = require('./mock-gladys');
 
-const index = require('./index')(sails);
+const index = require('../index')(sails);
 
 /*
 index.setup().then(() => {
@@ -10,7 +10,7 @@ index.setup().then(() => {
 */
 
 index.init(sails).then(() => {
-    console.log('ICI')
+    //console.log('ICI')
 });
 
 

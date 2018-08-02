@@ -17,8 +17,19 @@ function create (deviceInfo){
 
 function userSeen(obj){
     return new Promise(function(resolve, reject){
-        console.log('USER SEEN');
         resolve('plop');
+    });
+}
+
+function isUserNotAtHome(obj){
+    return new Promise(function(resolve, reject){
+        resolve(true);
+    });
+}
+
+function isUserAtHome(obj){
+    return new Promise(function(resolve, reject){
+        resolve(false);
     });
 }
 
@@ -28,6 +39,18 @@ function getMyHouse(){
     });
 }
 
+function eventCreate(){
+    return new Promise(function(resolve, reject){
+        resolve({id: 'plopplop'});
+    });
+}
+
+function on(type, callback){
+}
+
+
+
+
 module.exports = {
     param: {
         getValue: getValue
@@ -36,9 +59,15 @@ module.exports = {
         create: create
     },
     house:{
-        userSeen: userSeen
+        userSeen: userSeen,
+        isUserNotAtHome: isUserNotAtHome,
+        isUserAtHome: isUserAtHome
     },
     machine: {
         getMyHouse: getMyHouse
-    }
+    },
+    event: {
+        create: eventCreate
+    },
+    on: on
 };
