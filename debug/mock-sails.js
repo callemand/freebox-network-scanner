@@ -20,7 +20,7 @@ function silly (msg) {
     print("SILLY", msg);
 }
 function print(level, msg){
-    console.log("[", level, "]", msg);
+    //console.log("[", level, "]", msg);
 }
 
 module.exports = {

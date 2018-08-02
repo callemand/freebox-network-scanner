@@ -9,6 +9,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node test/test.js"
+    "start": "node debug/test.js"
   }
 }
