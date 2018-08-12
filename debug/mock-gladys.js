@@ -3,7 +3,12 @@
 
 function getValue (param) {
     return new Promise(function(resolve, reject){
-        resolve(1);
+        if(param == 'NETWORK_SCANNER_FREQUENCY_IN_MINUTE'){
+            resolve(1);
+        }else{
+            resolve('192.168.0.0/26');
+        }
+
     });
 }
 
